@@ -3,10 +3,10 @@ const router=express.Router();
 const CandidateModel=require('../models/CandidateSchema')
 router.post('/postCandidateImage',async(req,res)=>{
     try{
-        const {accountAddress,imageName}=req.body;
+        const {accountAddress,ImageName}=req.body;
         const saveCandidate=await CandidateModel.create({
             accountAddress:accountAddress,
-            imageName:imageName
+            ImageName:ImageName
         })
         res.status(200).json(saveCandidate)
     }catch(er){

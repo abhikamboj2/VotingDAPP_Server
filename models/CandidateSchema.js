@@ -9,5 +9,5 @@ const candidateSchema= new mongoose.Schema({
         required:true
     }
 })
-const CandidateModel=mongoose.model("Candidates",candidateSchema)
+const CandidateModel=mongoose.model('Candidates',candidateSchema)
 module.exports= CandidateModel
